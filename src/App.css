@@ -1,38 +1,136 @@
-.App {
+
+
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@500;600;700&family=Montserrat:wght@400;500;600;700&family=Oswald:wght@500;600;700&family=Rajdhani:wght@500;600;700&display=swap');
+
+/*se agraga tipografias personales*/
+:root {
+    /* TIPOGRAFÍAS */
+    --font-logo: 'Rajdhani', sans-serif;
+    --font-heading: 'Oswald', sans-serif;
+    --font-body: 'Montserrat', sans-serif;
+    --font-technical: 'Barlow Condensed', sans-serif;
+}
+
+body {
+    font-family: var(--font-body);
+}
+
+
+
+.contenedor-app {
+
+  font-family: 'oswald', Oswald; /* Cambia tu tipografía aquí */
+
   text-align: center;
+
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+
+.menu-navegacion {
+
+  background-color: #20252D; 
+
   color: white;
+
+  display: flex;
+
+  justify-content: space-between;
+
+  align-items: center;
+
+  padding: 10px 50px;
+
 }
 
-.App-link {
-  color: #61dafb;
+
+.menu-navegacion ul {
+
+  list-style: none;
+
+  display: flex;
+
+  gap: 20px;
+
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+
+
+.seccion-principal {
+
+  padding: 50px 20px;
+
+  background-color: #08090B; 
+
+}
+
+
+.imagen-destacada {
+
+  border-radius: 15px;
+
+  margin: 20px 0;
+
+  box-shadow: 0px 4px 10px rgba(0,0,0,0.2);
+
+}
+
+
+/* Botón con efecto Hover */
+
+.boton-accion {
+
+  background-color: #8E1022 ; 
+  border: none;
+
+  padding: 12px 24px;
+
+  font-size: 16px;
+
+  border-radius: 5px;
+
+  cursor: pointer;
+
+  font-weight: bold;
+
+  transition: 0.3s;
+
+}
+
+
+.boton-accion:hover {
+
+  background-color: #D71932; 
+
+  transform: scale(1.05);
+
+}
+
+
+.mensaje-sorpresa {
+
+  margin-top: 20px;
+
+  font-size: 18px;
+
+  color: #D71932;
+
+  font-weight: bold;
+
+}
+
+
+
+
+.pie-pagina {
+
+  background-color: #08090B; 
+
+  color: #F2F0EB;
+
+  padding: 20px;
+
+  margin-top: 40px;
+
 }
